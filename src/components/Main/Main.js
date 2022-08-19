@@ -20,7 +20,7 @@ const Main = () => {
   console.log(randomMovie);
   const truncateString = (str, num) => {
     if (str.length > num) {
-      return str.slice(0, num);
+      return str.slice(0, num) + "...";
     } else return str;
   };
 
@@ -47,7 +47,8 @@ const Main = () => {
             Released: {randomMovie?.release_date}
           </p>
           <p className="w-full md:mas-w-[70%] lg:max-w-[50%] xl:mas-w-[35%] text-gray-200">
-            {truncateString(randomMovie?.overview, 150)}
+            {/* {truncateString(randomMovie?.overview, 150)} */}
+            {randomMovie?.overview}
           </p>
         </div>
       </div>
