@@ -17,7 +17,7 @@ const Main = () => {
   useEffect(() => {
     fetchMovies();
   }, []);
-  console.log(randomMovie);
+
   const truncateString = (str, num) => {
     if (str.length > num) {
       return str.slice(0, num) + "...";

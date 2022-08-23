@@ -17,7 +17,7 @@ const Row = ({ title, fetchURL, rowID }) => {
   useEffect(() => {
     fetchMovies();
   }, []);
-  console.log(movies);
+
   const sliderLeft = () => {
     let slider = document.getElementById("slider" + rowID);
     slider.scrollLeft = slider.scrollLeft - 500;
