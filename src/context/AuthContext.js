@@ -18,6 +18,7 @@ export function AuthContextProvider({ children }) {
     setDoc(doc(db, "users", email), {
       savedShow: [],
     });
+    console.log("Database has been created for the user");
   };
   const logIn = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);

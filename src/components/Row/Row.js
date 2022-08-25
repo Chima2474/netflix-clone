@@ -11,7 +11,7 @@ const Row = ({ title, fetchURL, rowID }) => {
       const data = await response.json();
       setMovies(data.results);
     } catch (error) {
-      console.log("there was an error");
+      console.log(error);
     }
   };
   useEffect(() => {
