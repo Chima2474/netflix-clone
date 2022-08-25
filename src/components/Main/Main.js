@@ -10,7 +10,7 @@ const Main = () => {
       const data = await response.json();
       setMovies(data.results);
     } catch (error) {
-      console.log("There was an error");
+      alert("There was an error");
     }
   };
 

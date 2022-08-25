@@ -18,7 +18,6 @@ const Login = () => {
       setPassword("");
       setEmail("");
     } catch (error) {
-      console.log(error);
       setError(error.message);
     }
   };

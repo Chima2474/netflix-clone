@@ -21,7 +21,7 @@ const SavedShow = () => {
       setMovies(doc?.data()?.savedShow);
     });
   }, [user?.email]);
-  console.log(movies);
+
   const movieRef = doc(db, "users", `${user?.email}`);
   const deleteShow = async (passedID) => {
     try {
@@ -30,9 +30,8 @@ const SavedShow = () => {
         savedShow: result,
       });
     } catch (error) {
-      console.log(error);
+      alert("An Error Occured Please Check Your Network");
     }
-    console.log("movie deleted");
   };
   return (
     <>

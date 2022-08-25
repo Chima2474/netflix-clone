@@ -10,7 +10,7 @@ const Navbar = () => {
       await logOut();
       navigate("/");
     } catch (error) {
-      console.log(error);
+      alert("Oop! an Error occured");
     }
   };
   // console.log(user.email);

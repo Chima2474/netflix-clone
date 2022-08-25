@@ -13,7 +13,7 @@ const SignUp = () => {
       await signUp(email, password);
       navigate("/");
     } catch (error) {
-      console.log(error);
+      alert("Please Make sure you are connected");
     }
   };
   return (
